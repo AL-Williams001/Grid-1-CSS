@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  height: 50px;
+  width: auto;
+}
+
+.card {
+  background-color: dodgerblue;
+  color: white;
+  padding: 1rem;
+  height: 6rem;
+  text-align: center;
+}
+/* Mobile */
+.cards {
+  display: grid;
+  gap: 1rem;
+}
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat (2, 1fr);
+  }
+}
+/* Screen larger than 900px? 3 columns 8*/
+@media (min-width:900px) {
+  .cards {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
